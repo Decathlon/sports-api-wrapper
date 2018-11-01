@@ -1,4 +1,4 @@
-# Decathlon::Sports
+# Decathlon - Sports API wrapper
 
 A Ruby interface to [Decathlon's Sports API](https://developers.decathlon.com/sports)
 
