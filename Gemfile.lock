@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    decathlon-sports (0.1.0)
-      faraday
-      json
+    decathlon-sports (0.1.1)
+      faraday (~> 0.15.3)
+      json (~> 2.1.0)
 
 GEM
   remote: https://rubygems.org/
