@@ -5,8 +5,8 @@ require 'decathlon/sports/version'
 Gem::Specification.new do |spec|
   spec.name          = 'decathlon-sports'
   spec.version       = Decathlon::Sports::VERSION
-  spec.authors       = ['Caio Bianchi']
-  spec.email         = ['caio.bianchi@decathlon.com']
+  spec.authors       = ['Decathlon Canada', 'Caio Bianchi']
+  spec.email         = ['developers@decathlon.com', 'caio.bianchi@decathlon.com']
 
   spec.summary       = 'Gem to wrap the Decathlon Sports API'
   spec.description   = 'Gem to wrap the Decathlon Sports API'
@@ -34,6 +34,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+  spec.required_ruby_version = '>= 2.2'
 
   spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'rake', '~> 10.0'
