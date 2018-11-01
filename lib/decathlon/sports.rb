@@ -1,8 +1,8 @@
 require 'decathlon/sports/version'
 require 'decathlon/sports/sport'
+require 'decathlon/sports/recommendation'
 
 module Decathlon
   module Sports
-    # Your code goes here...
   end
 end

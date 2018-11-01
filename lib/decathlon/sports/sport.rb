@@ -1,7 +1,7 @@
 require 'faraday'
 require 'json'
 
-API_URL = 'https://sport-decathlon.herokuapp.com'.freeze
+API_URL = 'https://sports-decathlon.herokuapp.com'.freeze
 
 module Decathlon
   module Sports
