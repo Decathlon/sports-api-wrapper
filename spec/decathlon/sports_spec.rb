@@ -19,4 +19,10 @@ RSpec.describe Decathlon::Sports do
     expect(recommendations).to be_instance_of(Array)
     expect(recommendations.length).to eq(3)
   end
+
+  it 'returns search results' do
+    results = Decathlon::Sports.search('Snowboarding')
+    expect(results['data'].first['id'].to_i).to eq(70)
+    expect(results['data'].first['attributes']['name']).to eq('Snowboarding')
+  end
 end
