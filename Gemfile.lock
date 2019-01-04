@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    decathlon-sports (0.1.2)
+    decathlon-sports (0.1.3)
       faraday (~> 0.15.3)
       json (~> 2.1.0)
 
@@ -9,7 +9,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.3)
-    faraday (0.15.3)
+    faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
     json (2.1.0)
     multipart-post (2.0.0)
