@@ -30,6 +30,11 @@ sports = Decathlon::Sports.all
 sport = Decathlon::Sports.find(175)
 ```
 
+### Decathlon::Sports.search
+```ruby
+sport = Decathlon::Sports.search('Snowboarding')
+```
+
 ### Decathlon::Sports::Recommendations.get
 ```ruby
 recommendations = Decathlon::Sports::Recommendations.get(175)
