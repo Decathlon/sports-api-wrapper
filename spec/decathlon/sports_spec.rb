@@ -14,6 +14,11 @@ RSpec.describe Decathlon::Sports do
     expect(sport['data']['attributes']['name']).to eq('Ice hockey')
   end
 
+  it 'returns filtered results' do
+    results = Decathlon::Sports.filter(decathlon_id: 175)
+    expect(results['data'].first['attributes']['decathlon_id']).to eq(175)
+  end
+
   it 'returns recommendations' do
     recommendations = Decathlon::Sports::Recommendations.get(175)
     expect(recommendations).to be_instance_of(Array)
