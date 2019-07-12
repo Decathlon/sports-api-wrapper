@@ -18,6 +18,11 @@ module Decathlon
       JSON.parse(response.body)
     end
 
+    def self.isearch(name)
+      response = Faraday.get("#{API_URL}/sports/search/#{name}")
+      JSON.parse(response.body)
+    end
+
     def self.call(url)
       response = Faraday.get(url)
       JSON.parse(response.body)

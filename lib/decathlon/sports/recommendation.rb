@@ -9,8 +9,8 @@ module Decathlon
         JSON.parse(response.body)
       end
 
-      def self.location(id, city, country)
-        response = Faraday.get("#{API_URL}/sports/#{id}/recommendations/#{city.downcase}_#{country.downcase}")
+      def self.location(coordinates, source = 'popular', limit = 10)
+        response = Faraday.get("#{API_URL}/sports/recommendations?coordinates=#{coordinates[:lon]},#{coordinates[:lat]}&source=#{source}&count=#{limit}")
         JSON.parse(response.body)
       end
     end

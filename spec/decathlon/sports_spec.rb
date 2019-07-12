@@ -26,7 +26,7 @@ RSpec.describe Decathlon::Sports do
   end
 
   it 'returns recommendations' do
-    recommendations = Decathlon::Sports::Recommendations.location(175, 'Montreal', 'CA')
+    recommendations = Decathlon::Sports::Recommendations.location(lon: 45.5119864, lat: -73.5826985)
     expect(recommendations).to be_instance_of(Hash)
     expect(recommendations.length).to eq(1)
   end
@@ -35,5 +35,11 @@ RSpec.describe Decathlon::Sports do
     results = Decathlon::Sports.search('Snowboarding')
     expect(results['data'].first['id'].to_i).to eq(70)
     expect(results['data'].first['attributes']['name']).to eq('Snowboarding')
+  end
+
+  it 'returns search results' do
+    results = Decathlon::Sports.isearch('soccer')
+    expect(results.first['id'].to_i).to eq(81)
+    expect(results.first['attributes']['name']).to eq('Soccer')
   end
 end
