@@ -13,7 +13,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     json (2.1.0)
     multipart-post (2.0.0)
-    rake (10.5.0)
+    rake (13.0.1)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -34,7 +34,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   decathlon-sports!
-  rake (~> 10.0)
+  rake (~> 13.0)
   rspec (~> 3.0)
 
 BUNDLED WITH
